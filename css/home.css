@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial;
+}
+.clear{
+    clear: both;
+}
+body{
+    background: #e7ecf4;
+}
+/* Header */
+#header{
+    position: relative;
+    background: #222;
+    padding: 10px 0;
+}
+#search-box input{
+    width: 280px;
+    height: 30px;
+    border-radius: 5px 0 0 5px;
+}
+#search-box button{
+    width: 80px;
+    height: 30px;
+    background: #eb1f27;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+}
+#cart-notify a{
+    float: right;
+    color: #fff;
+    text-decoration: none;
+}
+#cart-notify span{
+    width: 30px;
+    height: 30px;
+    background: #eb1f27;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+}
+/* End Header */
+/* Main */
+#menu{
+    background: #eb1f27;
+    overflow: hidden;
+}
+#menu li{
+    float: left;
+    list-style: none;
+    border-right: 1px solid #c60a11;
+    padding: 15px;
+}
+#menu li:hover{
+    background: #c60a11;
+}
+#menu a{
+    color: #fff;
+    text-decoration: none;
+}
+h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.card-deck{
+    text-align: center;
+}
+.card{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    margin: 5px !important;
+    border: 1px solid #999;
+}
+.card:first-child{
+    margin-left: 15px !important;
+}
+.card:last-child{
+    margin-right: 15px !important;
+}
+.card img{
+    width: 125px;
+    height: 160px;
+}
+.card:hover img{
+    opacity: 0.5;
+}
+.card h3 a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+}
+.card p span{
+    color: #eb1f27;
+    font-weight: 700;
+}
+#sidebar img{
+    margin-bottom: 10px;
+}
+/* End Main */
+/* Footer */
+#footer-top{
+    background: #fff;
+    margin-top: 30px;
+    padding: 25px 0;
+}
+#footer-top p{
+    margin-top: 15px;
+    text-align: justify;
+}
+.service h2{
+    margin: 0;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+}
+#footer-bot{
+    background: #1d1e24;
+    padding: 15px 0;
+}
+#footer-bot p{
+    color: #a1b1bc;
+}
+/* End Footer */
+/* CSS3 Media */
+@media (max-width: 992px){
+    #sidebar{
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    #cart-notify a{
+        float: none;
+    }
+    .d-flex{
+        margin: 25px 0;
+    }
+    #menu li{
+        float: none;
+        border-bottom: 1px solid #c60a11;
+    }
+    .carousel{
+        display: none;
+    }
+    .card:first-child{
+        margin-left: 5px !important;
+    }
+    .card:last-child{
+        margin-right: 5px !important;
+    }
+    .service h2{
+        margin-top: 15px;
+    }
+    #menu-collapse{
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+@media (min-width: 768px){
+    #menu{
+        display: block;
+    }
+    #menu-collapse{
+        display: none;
+    }
+}
